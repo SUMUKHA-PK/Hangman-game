@@ -5,7 +5,7 @@
 import random
 
 def return_word():
-    word_set = ["COMPUTER","FUZZY","SUMUKHA","CONSTANTINOPLE","VEYRON","EXORCIST","QUINTILLION","PLATEAU"]
+    word_set = ["COMPUTER","FUZZY","SUMUKHA","CONSTANTINOPLE","VEYRON","EXORCIST","QUINTILLION","PLATEAU","SENNHEISER"]
 
     l = len(word_set)
 
