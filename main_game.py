@@ -7,7 +7,7 @@ print("Welcome to Hangman!")
 
 word = choose_word.return_word();
 word_length = len(word)
-number_of_chances = 8  # Standard number of chances in a game of hangman
+number_of_chances = 8                                                           # Standard number of chances in a game of hangman
 string = "-" * word_length
 
 while(number_of_chances>0):
@@ -17,7 +17,7 @@ while(number_of_chances>0):
     user_input = user_input.upper()
     if(len(user_input)>1):
         print("Input only one character please!")
-    elif((user_input==" ")|(user_input=="")):
+    elif((user_input==" ")|(user_input=="")):                                   # Check for  valid input
         print("Enter valid input!")
     else:
         flag=0
@@ -28,7 +28,6 @@ while(number_of_chances>0):
                 x = list(string)
                 x[i]=user_input
                 string="".join(x)
-                break
         if(flag==0):
             print("There are no "+user_input+"\'s in the word")
             number_of_chances-=1
