@@ -24,10 +24,11 @@ while(number_of_chances>0):
         for i in range(0,word_length):
             if((string[i]=="-")&(word[i]==user_input)):
                 flag=1
-                print("That guess is correct.")
                 x = list(string)
                 x[i]=user_input
                 string="".join(x)
+        if(flag==1):
+            print("That guess is correct.")
         if(flag==0):
             print("There are no "+user_input+"\'s in the word")
             number_of_chances-=1
